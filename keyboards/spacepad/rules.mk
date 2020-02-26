@@ -1,4 +1,4 @@
-DEFAULT_FOLDER = spacemouse
+DEFAULT_FOLDER = spacepad
 
 NRF_DEBUG = no
 
@@ -31,7 +31,6 @@ ARMV = 7
 
 # Build Options
 #   comment out to disable the options.
-#
 
 # apparently nrf52 does not support that at the time
 # BACKLIGHT_ENABLE = yes
@@ -44,7 +43,7 @@ MCU_SERIES = NRF52840
 NRFSDK_ROOT := $(NRFSDK15_ROOT) #Path to nRF SDK v15.0.0
 
 # project specific files
-#SRC =	matrix.c
+#SRC =	spacepad.c
 
 #NRF_SEPARATE = master
 #CFLAGS += -DNRF_XTAL_32MHZ
