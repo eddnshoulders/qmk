@@ -21,29 +21,32 @@
 #undef F5
 #undef F6
 #undef F7
+                 //pin
+#define D3 PIN1  //006
+#define D2 PIN2  //008
+#define D1 PIN5  //015
+#define D0 PIN6  //017
+#define D4 PIN7  //020
+#define C6 PIN8  //013
+#define D7 PIN9  //024
+#define E6 PIN10 //009
+#define B4 PIN11 //010
+#define B5 PIN12 //106
+#define B6 PIN13 //111
+#define B2 PIN14 //028
+#define B3 PIN15 //003
+#define B1 PIN16 //113
+#define F7 PIN17 //002
+#define F6 PIN18 //029
+#define F5 PIN19 //031
+#define F4 PIN20 //030
 
-#define D3 PIN1
-#define D2 PIN2
-#define D1 PIN5
-#define D0 PIN6
-#define D4 PIN7
-#define C6 PIN8
-#define D7 PIN9
-#define E6 PIN10
-#define B4 PIN11
-#define B5 PIN12
-#define B6 PIN13
-#define B2 PIN14
-#define B3 PIN15
-#define B1 PIN16
-#define F7 PIN17
-#define F6 PIN18
-#define F5 PIN19
-#define F4 PIN20
+#define THIS_DEVICE_ROWS 3
+#define THIS_DEVICE_COLS 4
 
-#define THIS_DEVICE_ROWS 4
-#define THIS_DEVICE_COLS 7
+#define MATRIX_ROW_PINS { B4, B5, D3 }
+#define MATRIX_COL_PINS { B3, B2, B6, D2 }
 
-#define MATRIX_ROW_PINS { D3, D2, E6, B4 }
-#define MATRIX_COL_PINS { F4, F5, F6, F7, B1, B3, B2 }
-
+// pins as labelled on the pcb
+//						{ 010, 106, 006 }
+//						{ 003, 028, 111, 008 }

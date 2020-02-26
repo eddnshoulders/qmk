@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 extern keymap_config_t keymap_config;
 
-enum jian_layers {
+enum spacepad_layers {
   _QWERTY,
   _ISO,
   _LOWER,

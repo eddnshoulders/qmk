@@ -9,27 +9,27 @@
 #define BLE_HID_SLAVE_LATENCY 5
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xBC42
-#define PRODUCT_ID      0x0042
-#define DEVICE_VER      0x0100
-#define MANUFACTURER    Joric
-#define PRODUCT         Jian BLE
-#define DESCRIPTION     The Answer to the Ultimate Question of Life, the Universe, and at least Keyboards
+#define VENDOR_ID       0x1234
+#define PRODUCT_ID      0x5678
+#define DEVICE_VER      0x0001
+#define MANUFACTURER    ajcraig
+#define PRODUCT         Spacemouse Macropad
+#define DESCRIPTION     6 button macro pad for Connexion Spacemouse Wireless - https://www.thingiverse.com/thing:3562600
 
 /* key matrix size */
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 7
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 4
 
 // different Jian configs
-#define DIPS_ENABLE
-#define PHYSICAL_LEDS_ENABLE
-#define NUM_LOCK_LED_PIN C6
-#define CAPS_LOCK_LED_PIN D7
-#define SCROLL_LOCK_LED_PIN B5
+//#define DIPS_ENABLE
+//#define PHYSICAL_LEDS_ENABLE
+//#define NUM_LOCK_LED_PIN C6
+//#define CAPS_LOCK_LED_PIN D7
+//#define SCROLL_LOCK_LED_PIN B5
 
-#define NUM_LOCK_INVERT  //uncomment this if you using n-mosfet
-#define CAPS_LOCK_INVERT  //uncomment this if you using n-mosfet
-#define SCROLL_LOCK_INVERT  //uncomment this if you using n-mosfet
+//#define NUM_LOCK_INVERT  //uncomment this if you using n-mosfet
+//#define CAPS_LOCK_INVERT  //uncomment this if you using n-mosfet
+//#define SCROLL_LOCK_INVERT  //uncomment this if you using n-mosfet
 
 #ifdef NUM_LOCK_INVERT
 #define SET_NUM_LOCK_LED() writePinHigh(NUM_LOCK_LED_PIN)
@@ -65,33 +65,33 @@
 
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
+//#define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+//#define LOCKING_RESYNC_ENABLE
 
 /* key combination for command */
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
 
-//#ifdef BACKLIGHT_ENABLE
+#ifdef BACKLIGHT_ENABLE
 #define BACKLIGHT_PIN PIN13
 #define BACKLIGHT_LEVELS 5
-//#define BACKLIGHT_BREATHING //not working with splits right now
+#define BACKLIGHT_BREATHING //not working with splits right now
 #define BREATHING_PERIOD 6
-//#endif
+#endif
 
 /* ws2812 RGB LED */
-#define RGB_DI_PIN PIN7
-#define RGBLIGHT_TIMER
-#define RGBLED_NUM 7    // Number of LEDs
+//#define RGB_DI_PIN PIN7
+//#define RGBLIGHT_TIMER
+//#define RGBLED_NUM 7    // Number of LEDs
 //#define RGBLIGHT_ANIMATIONS //not working with splits right now
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
-#define RGBLIGHT_LIMIT_VAL 100
-#define ws2812_PORTREG  PORTD
-#define ws2812_DDRREG   DDRD
+//define RGBLIGHT_HUE_STEP 8
+//#define RGBLIGHT_SAT_STEP 8
+//#define RGBLIGHT_VAL_STEP 8
+//#define RGBLIGHT_LIMIT_VAL 100
+//#define ws2812_PORTREG  PORTD
+//#define ws2812_DDRREG   DDRD
 
 /*
  * Feature disable options

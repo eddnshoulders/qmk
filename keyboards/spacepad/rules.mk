@@ -1,4 +1,4 @@
-#DEFAULT_FOLDER = jian_ble/master
+DEFAULT_FOLDER = spacemouse
 
 NRF_DEBUG = no
 
