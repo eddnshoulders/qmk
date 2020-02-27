@@ -39,7 +39,7 @@ void matrix_init_user() {
 
   // blink on power on
   nrf_gpio_cfg_output(LED_PIN);
-  nrf_gpio_cfg_output(BACKLIGHT_PIN);
+ // nrf_gpio_cfg_output(BACKLIGHT_PIN);
   nrf_gpio_cfg_input(SWITCH_PIN, NRF_GPIO_PIN_PULLDOWN);
 
   for (int i = 0; i < 3; i++) {
