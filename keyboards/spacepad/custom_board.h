@@ -62,7 +62,7 @@ extern "C" {
 //#define NRF_LOG_ENABLED 0
 //#define NRF_LOG_BACKEND_SERIAL_USES_UART 0
 //#define NRF_LOG_BACKEND_SERIAL_UART_TX_PIN 5
-#define NRF_LOG_BACKEND_UART_TX_PIN 8
+//#define NRF_LOG_BACKEND_UART_TX_PIN 8
 //#define DEBUG
 // Low frequency clock source to be used by the SoftDevice
 #ifdef S210

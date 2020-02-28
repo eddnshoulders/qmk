@@ -42,19 +42,21 @@ void matrix_init_user() {
  // nrf_gpio_cfg_output(BACKLIGHT_PIN);
   nrf_gpio_cfg_input(SWITCH_PIN, NRF_GPIO_PIN_PULLDOWN);
 
+  #ifdef BACKLIGHT_PIN
   for (int i = 0; i < 3; i++) {
     nrf_gpio_pin_set(LED_PIN);
     nrf_gpio_pin_set(BACKLIGHT_PIN);
     nrf_delay_ms(100);
-
     nrf_gpio_pin_clear(LED_PIN);
     nrf_gpio_pin_clear(BACKLIGHT_PIN);
     nrf_delay_ms(100);
   }
+  #endif
 
   nrf_gpio_pin_set(LED_PIN);
-
+  #ifdef PHYSICAL_LEDS_ENABLE
   led_init_kb();
+  #endif
 }
 
 void matrix_init_kb(void) {

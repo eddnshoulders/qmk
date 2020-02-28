@@ -222,12 +222,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       //delete_bonds(); // causes reset
       restart_advertising_wo_whitelist();
       return false;
+    #ifdef BACKLIGHT_PIN
     case BL_INC:
       nrf_gpio_pin_set(BACKLIGHT_PIN);
       return false;
     case BL_DEC:
       nrf_gpio_pin_clear(BACKLIGHT_PIN);
       return false;
+    #endif
     }
   }
   else if (!record->event.pressed) {
