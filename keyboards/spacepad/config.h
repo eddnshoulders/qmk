@@ -1,6 +1,8 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+#define IS_LEFT_HAND  true
+
 #define ENABLE_STARTUP_ADV_NOLIST
 
 #define BLE_NUS_MIN_INTERVAL 30
