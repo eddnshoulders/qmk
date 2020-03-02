@@ -6,6 +6,9 @@
 // Used to create a keymap using only KC_ prefixed keys
 #define XXX KC_NO
 #define ___ KC_TRNS
+
+//
+
 #define LAYOUT( \
   k00, k01, k02, \
   k10, k11, k12, \

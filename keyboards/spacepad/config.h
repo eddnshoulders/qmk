@@ -2,6 +2,7 @@
 #define CONFIG_H
 
 #define IS_LEFT_HAND  true
+//#define FLIPPED_NRFMICRO
 
 #define ENABLE_STARTUP_ADV_NOLIST
 
@@ -14,8 +15,8 @@
 #define VENDOR_ID       0x1234
 #define PRODUCT_ID      0x5678
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    ajcraig
-#define PRODUCT         Spacemouse Macropad
+#define MANUFACTURER    ajcraig & eddnshoulders
+#define PRODUCT         Spacepad
 #define DESCRIPTION     6 button macro pad for Connexion Spacemouse Wireless - https://www.thingiverse.com/thing:3562600
 
 /* key matrix size */
@@ -57,13 +58,13 @@
 #define RESET_SCROLL_LOCK_LED() writePinHigh(SCROLL_LOCK_LED_PIN)
 #endif // SCROLL_LOCK_INVERT
 
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCING_DELAY 5
+//#define DEBOUNCING_DELAY 5
 
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */

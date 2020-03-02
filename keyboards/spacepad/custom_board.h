@@ -58,12 +58,17 @@ extern "C" {
 #define DFU_PIN GPIO(1,02)
 #define SWITCH_PIN GPIO(0,26)
 
+/*
+#define NRF_LOG_ENABLED 1
+#define NRF_LOG_BACKEND_SERIAL_USES_UART 0
+#define NRF_LOG_BACKEND_SERIAL_UART_TX_PIN 5
 
-//#define NRF_LOG_ENABLED 0
-//#define NRF_LOG_BACKEND_SERIAL_USES_UART 0
-//#define NRF_LOG_BACKEND_SERIAL_UART_TX_PIN 5
-//#define NRF_LOG_BACKEND_UART_TX_PIN 8
-//#define DEBUG
+#ifdef NRF_LOG_BACKEND_UART_TX_PIN
+  #undef NRF_LOG_BACKEND_UART_TX_PIN
+  #define NRF_LOG_BACKEND_UART_TX_PIN 8
+#endif
+*/
+
 // Low frequency clock source to be used by the SoftDevice
 #ifdef S210
 // #define NRF_CLOCK_LFCLKSRC      NRF_CLOCK_LFCLKSRC_XTAL_20_PPM

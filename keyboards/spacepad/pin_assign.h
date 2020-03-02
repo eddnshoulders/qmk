@@ -46,7 +46,3 @@
 
 #define MATRIX_ROW_PINS { B4, B5, D3 }
 #define MATRIX_COL_PINS { B3, B2, B6, D2 }
-
-// pins as labelled on the pcb
-//						{ 010, 106, 006 }
-//						{ 003, 028, 111, 008 }
