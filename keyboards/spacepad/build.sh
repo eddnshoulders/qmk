@@ -8,6 +8,6 @@ make spacepad
 
 cd .build
 FILE=${1:-spacepad_default.hex}
-$DIR/uf2conv.py $FILE -c -f 0xADA52840
-mv flash.uf2 ../..
-cd ../..
+cp $FILE $DIR
+cd $DIR
+python3 uf2conv.py $FILE -c -f 0xADA52840
